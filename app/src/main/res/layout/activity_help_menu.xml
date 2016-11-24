@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.loginwithgmail.helpMenu"
+    android:background="@color/app">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="collection services"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/set2"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/set1"
+        android:layout_alignStart="@+id/set1"
+        android:layout_alignEnd="@+id/set1"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <Button
+            android:background="@drawable/exchangefun"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:id="@+id/bExchange"
+            android:layout_above="@+id/bTRAVEL"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:padding="30dp"
+            android:layout_weight="0.10" />
+
+        <Button
+            android:background="@drawable/conversationfun"
+            android:layout_width="94dp"
+            android:layout_height="100dp"
+            android:id="@+id/bCONVERSATION"
+            android:padding="30dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.42" />
+
+        <Button
+            android:background="@drawable/souvenirfun"
+            android:layout_width="97dp"
+            android:layout_height="100dp"
+            android:id="@+id/bsouvenir"
+            android:padding="30dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/set3"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/set2"
+        android:layout_alignStart="@+id/set2"
+        android:layout_alignEnd="@+id/set2"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp">
+
+        <Button
+            android:background="@drawable/mrtfun"
+            android:id="@+id/bTRAVEL"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:padding="30dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="90dp"
+            android:layout_weight="0.09"
+            android:layout_width="90dp" />
+
+        <Button
+            android:background="@drawable/festivalfun"
+            android:id="@+id/bFestival"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.09"
+            android:layout_width="90dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:id="@+id/set1"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:background="@drawable/policefun"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:id="@+id/bpolice"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:padding="30dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:layout_weight="13.82" />
+
+        <Button
+            android:background="@drawable/hospitalfun"
+            android:layout_width="101dp"
+            android:layout_height="100dp"
+            android:id="@+id/bhospital"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:padding="30dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="9.48" />
+        <Button
+            android:background="@drawable/embassyfun"
+            android:layout_width="104dp"
+            android:layout_height="100dp"
+            android:id="@+id/bEmbassy"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:padding="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

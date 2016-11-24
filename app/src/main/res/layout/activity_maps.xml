@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.loginwithgmail.Maps"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app">
+
+        <CheckBox
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/ckMarket"
+            android:button="@null"
+            android:background="@drawable/marnor"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/ckRestaurant" />
+
+        <CheckBox
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:button="@null"
+            android:background="@drawable/attnor"
+            android:id="@+id/ckAttraction"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:button="@null"
+            android:background="@drawable/resno"
+            android:id="@+id/ckRestaurant"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/ckAttraction" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:button="@null"
+            android:id="@+id/bHelpService"
+            android:background="@drawable/help"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/bMutiSearch" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:button="@null"
+            android:background="@drawable/search"
+            android:id="@+id/bMutiSearch"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/ckMarket"
+            android:layout_marginStart="5dp" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="560dp">
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Search Location Here"
+            android:onClick="onMapSearch"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+        <Button
+            android:id="@+id/currentButton"
+            android:background="@drawable/current"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="300dp"
+            />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/go"
+            android:button="@null"
+            android:id="@+id/traval"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="300dp" />
+        <CheckBox
+            android:layout_width="52dp"
+            android:layout_height="50dp"
+            android:background="@drawable/allck"
+            android:button="@null"
+            android:id="@+id/all"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="300dp" />
+
+    </fragment>
+
+</FrameLayout>
