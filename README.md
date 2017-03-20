@@ -1,2 +1,2 @@
 load  >= go to andriod studio 
-than run
+then run
